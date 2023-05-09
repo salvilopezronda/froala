@@ -9,9 +9,8 @@ export class AppComponent implements AfterViewInit {
 
   title = 'froala';
 
-  
   ngAfterViewInit(): void {
-// @ts-ignore
+    // @ts-ignore
     FroalaEditor.DefineIcon('boton1', { NAME: 'info', SVG_KEY: 'help' });
     // @ts-ignore
     FroalaEditor.RegisterCommand('boton1', {
@@ -48,9 +47,9 @@ export class AppComponent implements AfterViewInit {
       }
     });
     // @ts-ignore
- new FroalaEditor('#editor', {
+    new FroalaEditor('#editor', {
       // Add the custom buttons in the toolbarButtons list, after the separator.
-      toolbarButtons: ['fullscreen', 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', '|', 'fontFamily', 'fontSize', 'color', 'inlineStyle', 'paragraphStyle', '|', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', 'quote', '-', 'insertLink', 'insertImage', 'insertVideo', 'insertFile', 'insertTable', '|', 'emoticons', 'specialCharacters', 'insertHR', 'selectAll', 'clearFormatting', '|', 'print', 'help', 'html', '|', 'undo', 'redo','trackChanges','markdown', '|','boton1','boton2','boton3'],
+      toolbarButtons: ['fullscreen', 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', '|', 'fontFamily', 'fontSize', 'color', 'inlineStyle', 'paragraphStyle', '|', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', 'quote', '-', 'insertLink', 'insertImage', 'insertVideo', 'insertFile', 'insertTable', '|', 'emoticons', 'specialCharacters', 'insertHR', 'selectAll', 'clearFormatting', '|', 'print', 'help', 'html', '|', 'undo', 'redo', 'trackChanges', 'markdown', '|', 'boton1', 'boton2', 'boton3'],
       dragInline: false,
     })
   }
